@@ -221,6 +221,9 @@
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
+.h-fit {
+  height: fit-content;
+}
 .h-screen {
   height: 100vh;
 }
@@ -235,6 +238,9 @@
 }
 .w-1\/2 {
   width: calc(1/2 * 100%);
+}
+.w-\[80\%\] {
+  width: 80%;
 }
 .w-screen {
   width: 100vw;
@@ -1486,6 +1492,14 @@
 }
 .transform-view {
   transform-box: view-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(/resources/bg.png);
 }
 @property --tw-translate-x {
   syntax: "*";
