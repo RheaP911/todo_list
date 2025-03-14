@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
     <link rel="stylesheet" href="/dist/output.css">
-</head>
-<body class="w-screen h-screen bg-cover bg-center">
-    <main>
-        <div class="w-[80%] h-fit border border-black">
-            <h1>To-Do List</h1>
-        </div>
-        <div></div>
-        <div>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body class="w-screen h-screen bg-cover bg-center">
+    <main class=" w-full h-full flex justify-center items-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <div class="w-[82%] h-fit mb-5 bg-white border border-3 border-black">
+                <h1 class="todo-text text-center uppercase font-light">To-Do List</h1>
+            </div>
+            <div id="tasks-section" class="w-full h-fit flex flex-col justify-center items-center">
+                <div class="w-[75%] h-fit px-2 py-3 mt-4 gap-1 flex justify-start items-center  bg-white border border-2 border-black font-maely">
+                    <i class="fa-solid fa-asterisk text-xl font-light text-teal"></i>
+                    <h2 class="text-3xl font-light">Cook a healthy food</h2>
+                </div>
+            </div>
+            <div>
+
+            </div>
         </div>
+
     </main>
 </body>
+
 </html>

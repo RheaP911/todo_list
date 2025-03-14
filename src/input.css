@@ -2,12 +2,79 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: Handy_Casual;
+    src: url(/resources/font/HandyCasual.ttf);
+}
+
+@font-face {
+    font-family: Maely;
+    src: url(/resources/font/Maely.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Padding */
+.px-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.py-3 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+/* Gap */
+.gap-1 {
+    gap: 1rem;
+}
+
+/* Font Size */
+.text-xl {
+    font-size: 1.5rem;
+}
+.text-3xl {
+    font-size: 2rem;
+}
+
+/* Font Weight */
+.font-light {
+    font-weight: 400;
+}
+
+/* Background */
+.bg-white {
+    background-color: #ffffff;
+}
+
+/* Margin */
+.mt-4 {
+
+}
+.mb-5 {
+    margin-bottom: 1.8rem;
+}
+
+/* Fonts */
+.font-maely {
+    font-family: 'Maely', sans-serif;
+}
+
+/* Colors */
+.text-teal {
+    color: #288c70;
+}
+
 body {
     background: url(/resources/bg.png);
+}
+
+.todo-text {
+    font-size: 4rem;
+    font-family: 'Handy_Casual', serif;
+    background: #fff;
 }
