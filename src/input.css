@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "tailwindcss";
+
 @font-face {
     font-family: Handy_Casual;
     src: url(/resources/font/HandyCasual.ttf);
@@ -12,69 +14,31 @@
     src: url(/resources/font/Maely.ttf);
 }
 
+@theme {
+    --font-maely: "Maely", "sans-serif";
+    --font-handy: "Handy_Casual", "serif";
+
+    --breakpoint-xs: 475px;
+
+    --color-teal-100:  #288c70;
+    --color-teal-200:  #35af8d;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Padding */
-.px-2 {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-}
-.py-3 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-}
-
-/* Gap */
-.gap-1 {
-    gap: 1rem;
-}
-
-/* Font Size */
-.text-xl {
-    font-size: 1.5rem;
-}
-.text-3xl {
-    font-size: 2rem;
-}
-
-/* Font Weight */
-.font-light {
-    font-weight: 400;
-}
-
-/* Background */
-.bg-white {
-    background-color: #ffffff;
-}
-
-/* Margin */
-.mt-4 {
-
-}
-.mb-5 {
-    margin-bottom: 1.8rem;
-}
-
-/* Fonts */
-.font-maely {
-    font-family: 'Maely', sans-serif;
-}
-
-/* Colors */
-.text-teal {
-    color: #288c70;
-}
 
 body {
     background: url(/resources/bg.png);
 }
 
-.todo-text {
-    font-size: 4rem;
-    font-family: 'Handy_Casual', serif;
-    background: #fff;
+.task-container {
+    @apply w-[80%] h-fit px-4 py-1 mb-2.5  flex justify-start items-center gap-4  bg-white border border-2 border-black;
+}
+
+.icon-style {
+    @apply text-xl font-light text-teal-200;
 }

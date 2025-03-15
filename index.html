@@ -11,19 +11,71 @@
 </head>
 
 <body class="w-screen h-screen bg-cover bg-center">
-    <main class=" w-full h-full flex justify-center items-center">
-        <div class="w-full h-full flex flex-col justify-center items-center">
-            <div class="w-[82%] h-fit mb-5 bg-white border border-3 border-black">
-                <h1 class="todo-text text-center uppercase font-light">To-Do List</h1>
+    <main class=" w-full h-full flex justify-center items-start ">
+        <div class="w-full h-full flex flex-col justify-start items-center ">
+            <div class="w-full h-[23.5%] pb-5 flex justify-center items-end realtive">
+                <img src="resources/star.svg" alt="" class="absolute w-28 h-28 top-14 -left-12">
+                <h1
+                    class="w-[85%] p-2 text-5xl text-center uppercase font-handy font-medium bg-white border border-3 border-black">
+                    To-Do List</h1>
             </div>
-            <div id="tasks-section" class="w-full h-fit flex flex-col justify-center items-center">
-                <div class="w-[75%] h-fit px-2 py-3 mt-4 gap-1 flex justify-start items-center  bg-white border border-2 border-black font-maely">
-                    <i class="fa-solid fa-asterisk text-xl font-light text-teal"></i>
-                    <h2 class="text-3xl font-light">Cook a healthy food</h2>
+            <div id="tasks-section"
+                class="w-full h-[61%] flex flex-col justify-start items-center overflow-y-scroll scrolling-touch font-maely">
+                <div class="task-container">
+                    <div class="w-fit h-full pt-1 flex justify-start items-start">
+                        <i class="fa-solid fa-asterisk icon-style"></i>
+                    </div>
+                    <h2 class="text-2xl font-light">Cook a healthy food</h2>
+                </div>
+                <div
+                    class="task-container">
+                    <div class="w-fit h-full pt-1 flex justify-start items-start">
+                        <i class="fa-solid fa-asterisk icon-style"></i>
+                    </div>
+                    <h2 class="text-2xl font-light">Cook a healthy food</h2>
+                </div>
+                <div
+                    class="task-container">
+                    <div class="w-fit h-full pt-1 flex justify-start items-start">
+                        <i class="fa-solid fa-asterisk icon-style"></i>
+                    </div>
+                    <h2 class="text-2xl font-light">Wake Up Early</h2>
+                </div>
+                <div
+                    class="task-container">
+                    <div class="w-fit h-full pt-1 flex justify-start items-start">
+                        <i class="fa-solid fa-asterisk icon-style"></i>
+                    </div>
+                    <h2 class="text-2xl font-light">Do meditation</h2>
+                </div>
+                <div
+                    class="task-container">
+                    <div class="w-fit h-full pt-1 flex justify-start items-start">
+                        <i class="fa-solid fa-asterisk icon-style"></i>
+                    </div>
+                    <h2 class="text-2xl font-light">Drink enough water</h2>
+                </div>
+                <div
+                    class="task-container">
+                    <div class="w-fit h-full pt-1 flex justify-start items-start">
+                        <i class="fa-solid fa-asterisk icon-style"></i>
+                    </div>
+                    <h2 class="text-2xl font-light">Write a journal</h2>
+                </div>
+                <div
+                    class="task-container">
+                    <div class="w-fit h-full pt-1 flex justify-start items-start">
+                        <i class="fa-solid fa-asterisk icon-style"></i>
+                    </div>
+                    <h2 class="text-2xl font-light">Get exercise</h2>
                 </div>
             </div>
-            <div>
-
+            <div class="w-full h-[15.5%] flex justify-center items-center">
+                <div
+                    class="w-[80%] px-4 py-1 flex justify-between items-center bg-white border border-2 border-black font-maely">
+                    <h1 class="text-2xl font-light font-maely">Add new task</h1>
+                    <i class="fa-solid fa-plus icon-style"></i>
+                </div>
             </div>
         </div>
 
