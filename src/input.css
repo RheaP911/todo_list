@@ -20,11 +20,11 @@
 
     --breakpoint-xs: 475px;
 
-    --color-teal-100:  #288c70;
-    --color-teal-200:  #35af8d;
+    --color-teal-100: #288c70;
+    --color-teal-200: #35af8d;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -36,9 +36,44 @@ body {
 }
 
 .task-container {
-    @apply w-[80%] h-fit px-4 py-1 mb-2.5  flex justify-start items-center gap-4  bg-white border border-2 border-black;
+    @apply w-[80%] h-fit px-4 py-1 mb-2.5 flex justify-start items-center gap-4 bg-white border border-2 border-black;
 }
 
 .icon-style {
     @apply text-xl font-light text-teal-200;
+}
+
+ul::-webkit-scrollbar {
+    display: none;
+}
+ul li.checked {
+    background-color: #288c70;
+    color: #efefef;
+    text-decoration: line-through;
+}
+
+ul li{
+    position: relative;
+}
+ul li::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url('/resources/asterisk.png');
+    background-size: cover;
+    background-position: center;
+    top: 50;
+    left: 0;
+    margin-left: 1rem;
+    z-index: 10;
+}
+ul li.checked::before {
+    background-image: url('/resources/asterisk-checked.png');
+}
+ul li.swiping::before {
+    background-image: url('/resources/delete.png');
+}
+h2::-webkit-scrollbar {
+    display: none;
 }

@@ -19,67 +19,31 @@
                     class="w-[85%] p-2 text-5xl text-center uppercase font-handy font-medium bg-white border border-3 border-black">
                     To-Do List</h1>
             </div>
-            <div id="tasks-section"
+            <ul id="tasks-section"
                 class="w-full h-[61%] flex flex-col justify-start items-center overflow-y-scroll scrolling-touch font-maely">
-                <div class="task-container">
-                    <div class="w-fit h-full pt-1 flex justify-start items-start">
-                        <i class="fa-solid fa-asterisk icon-style"></i>
-                    </div>
+                <!-- <li class="task-container checked relative select-none cursor-pointer">
+                    <h2 class="text-2xl font-light ml-6">Cook a healthy food</h2>
+                </li>
+                <li class="task-container">
                     <h2 class="text-2xl font-light">Cook a healthy food</h2>
-                </div>
-                <div
-                    class="task-container">
-                    <div class="w-fit h-full pt-1 flex justify-start items-start">
-                        <i class="fa-solid fa-asterisk icon-style"></i>
-                    </div>
-                    <h2 class="text-2xl font-light">Cook a healthy food</h2>
-                </div>
-                <div
-                    class="task-container">
-                    <div class="w-fit h-full pt-1 flex justify-start items-start">
-                        <i class="fa-solid fa-asterisk icon-style"></i>
-                    </div>
+                </li>
+                <li class="task-container">
                     <h2 class="text-2xl font-light">Wake Up Early</h2>
-                </div>
-                <div
-                    class="task-container">
-                    <div class="w-fit h-full pt-1 flex justify-start items-start">
-                        <i class="fa-solid fa-asterisk icon-style"></i>
-                    </div>
-                    <h2 class="text-2xl font-light">Do meditation</h2>
-                </div>
-                <div
-                    class="task-container">
-                    <div class="w-fit h-full pt-1 flex justify-start items-start">
-                        <i class="fa-solid fa-asterisk icon-style"></i>
-                    </div>
-                    <h2 class="text-2xl font-light">Drink enough water</h2>
-                </div>
-                <div
-                    class="task-container">
-                    <div class="w-fit h-full pt-1 flex justify-start items-start">
-                        <i class="fa-solid fa-asterisk icon-style"></i>
-                    </div>
-                    <h2 class="text-2xl font-light">Write a journal</h2>
-                </div>
-                <div
-                    class="task-container">
-                    <div class="w-fit h-full pt-1 flex justify-start items-start">
-                        <i class="fa-solid fa-asterisk icon-style"></i>
-                    </div>
-                    <h2 class="text-2xl font-light">Get exercise</h2>
-                </div>
-            </div>
+                </li> -->
+                
+            </ul>
             <div class="w-full h-[15.5%] flex justify-center items-center">
                 <div
                     class="w-[80%] px-4 py-1 flex justify-between items-center bg-white border border-2 border-black font-maely">
-                    <h1 class="text-2xl font-light font-maely">Add new task</h1>
-                    <i class="fa-solid fa-plus icon-style"></i>
+                    <input type="text" id="taskInput" class="text-2xl font-light placeholder:text-2xl placeholder:font-light placeholder:text-black select-none outline-none" placeholder="Add new task" class="">
+                    </input>
+                    <button id="newTaskBtn" onclick="addTask()"><i class="fa-solid fa-plus icon-style"></i></button>
                 </div>
             </div>
         </div>
 
     </main>
+    <script src="src/script.js"></script>
 </body>
 
 </html>
